@@ -1,0 +1,14 @@
+allprojects {
+  apply plugin: 'java'
+  
+  repositories {
+    mavenCentral()
+  }
+
+
+  dependencies {
+    implementation "junit:junit:${junitVersion}"
+  }
+}
+
+
