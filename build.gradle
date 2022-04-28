@@ -5,9 +5,17 @@ allprojects {
     mavenCentral()
   }
 
-
   dependencies {
     implementation "junit:junit:${junitVersion}"
+  }
+
+  dependencyLocking {
+    lockAllConfigurations()
+  }
+  
+  task getDeps(type: Copy) {
+    from sourceSets.main.runtimeClasspath
+    into 'runtime/'
   }
 }
 
