@@ -7,6 +7,7 @@ allprojects {
 
   dependencies {
     implementation "junit:junit:${junitVersion}"
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
   }
 
 
