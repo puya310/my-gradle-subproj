@@ -9,6 +9,13 @@ allprojects {
     implementation "junit:junit:${junitVersion}"
   }
 
+
+  buildscript {
+    configurations.classpath {
+      resolutionStrategy.activateDependencyLocking()
+    }
+  }
+
   dependencyLocking {
     lockAllConfigurations()
   }
