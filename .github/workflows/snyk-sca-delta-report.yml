@@ -1,0 +1,34 @@
+name: snyk-sca-delta-report
+on:
+  pull_request
+
+jobs:
+  test-only-changes:
+    runs-on: ubuntu-latest
+    steps:       
+      - name: checkout
+        uses: actions/checkout@v2
+      
+      - name: setup snyk
+        run: |
+         npm install snyk -g 
+         npm i -g snyk-delta
+         npm install snyk-to-html -g
+
+      - name: snyk test
+        run: |
+          # authenticate snyk
+          snyk auth ${{ secrets.SNYK_TOKEN }}
+  
+      - name: run snyk test 
+        run: |
+          snyk test --json --print-deps 
+          snyk test --json | snyk-to-html -o result.html
+          snyk monitor --org=43cbc864-d70e-4b88-96cf-82999e3c2452 --project-name=jenkins-buildnumber-etc
+          
+          
+      - name: upload snyk report
+        uses: actions/upload-artifact@v3
+        with:
+          name: snyk-report-SCA
+          path: result.html
