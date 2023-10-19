@@ -13,7 +13,7 @@ allprojects {
 
   buildscript {
     configurations.classpath {
-      resolutionStrategy.activateDependencyLocking()
+      resolutionStrategy.activateDependencyLocking() 
     }
   }
 
