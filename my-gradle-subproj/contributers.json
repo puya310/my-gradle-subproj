@@ -1,0 +1,34 @@
+{
+    "privateRepoList": [
+        "Java-Goof/Java-Goof(private) - Contributors count: 2",
+        "juiceshop/juiceshop(private) - Contributors count: 1"
+    ],
+    "publicRepoList": [],
+    "contributorsCount": 2,
+    "repoCount": 2,
+    "undefinedRepoList": [],
+    "exclusionCount": 0,
+    "contributorsDetails": [
+        [
+            "Bob",
+            {
+                "email": "Bob@puya310routlook.onmicrosoft.com",
+                "contributionsCount": 4,
+                "reposContributedTo": [
+                    "Java-Goof/Java-Goof(private)"
+                ]
+            }
+        ],
+        [
+            "Puya Rajabian",
+            {
+                "email": "puya310r@outlook.com",
+                "contributionsCount": 16,
+                "reposContributedTo": [
+                    "juiceshop/juiceshop(private)",
+                    "Java-Goof/Java-Goof(private)"
+                ]
+            }
+        ]
+    ]
+}
