@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.paxage.someconnectors.VerifyFooAndHadoop" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-07-25T23:22:25" hostname="puya310.local" time="0.038">
+  <properties/>
+  <testcase name="yepItWorks" classname="com.paxage.someconnectors.VerifyFooAndHadoop" time="0.013"/>
+  <testcase name="yepItWorks2" classname="com.paxage.someconnectors.VerifyFooAndHadoop" time="0.024"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

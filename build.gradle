@@ -2,12 +2,19 @@ allprojects {
   apply plugin: 'java'
   
   repositories {
+    google()
     mavenCentral()
-  }
+    jcenter() // Warning: this repository is going to shut down soon
+    maven { url='https://jitpack.io'}
+}
 
   dependencies {
     implementation "junit:junit:${junitVersion}"
+    implementation 'org.apache.logging.log4j:log4j-core:2.14.1'
+    //implementation group: 'com.squareup.okio', name: 'okio', version: '3.3.0'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
+    implementation group: 'org.apache.tomcat', name: 'tomcat-catalina', version: '8.5.2'
+
   }
 
 
